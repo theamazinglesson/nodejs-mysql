@@ -1,0 +1,15 @@
+<div class="container">
+  <form class="form" action="/api/players/update/<%- player.id %>?_method=PUT" method="post">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" value="<%- player.name %>" name="name" id="name" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+      <label for="club" class="form-label">Club</label>
+      <input type="text" class="form-control" value="<%- player.club %>"  name="club" id="club" placeholder="Enter your club">
+    </div>
+    <div class="mb-3">
+      <input type="submit" class="btn btn-secondary" value="Update Player" >
+    </div>
+  </form>
+</div>
